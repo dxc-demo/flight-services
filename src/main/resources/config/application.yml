@@ -163,8 +163,8 @@ jhipster:
     contact-name:
     contact-url:
     contact-email:
-    license:
-    license-url:
+    
+    
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class
