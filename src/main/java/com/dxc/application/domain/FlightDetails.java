@@ -43,8 +43,8 @@ public class FlightDetails implements Serializable {
     @Column(name = "longitude", precision = 21, scale = 2, nullable = false)
     private BigDecimal longitude;
 
- /*   @Column(name = "altitude", precision = 21, scale = 2)
-    private BigDecimal altitude;*/
+    @Column(name = "altitude", precision = 21, scale = 2)
+    private BigDecimal altitude;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
     public Long getId() {
@@ -133,7 +133,7 @@ public class FlightDetails implements Serializable {
         this.longitude = longitude;
     }
 
-   /* public BigDecimal getAltitude() {
+    public BigDecimal getAltitude() {
         return altitude;
     }
 
@@ -144,7 +144,7 @@ public class FlightDetails implements Serializable {
 
     public void setAltitude(BigDecimal altitude) {
         this.altitude = altitude;
-    }*/
+    }
     // jhipster-needle-entity-add-getters-setters - JHipster will add getters and setters here, do not remove
 
     @Override
@@ -173,7 +173,7 @@ public class FlightDetails implements Serializable {
             ", iata='" + getIata() + "'" +
             ", latitude=" + getLatitude() +
             ", longitude=" + getLongitude() +
-          //  ", altitude=" + getAltitude() +
+            ", altitude=" + getAltitude() +
             "}";
     }
 }
