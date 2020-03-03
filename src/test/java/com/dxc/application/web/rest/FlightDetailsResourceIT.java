@@ -102,8 +102,8 @@ public class FlightDetailsResourceIT {
             .country(DEFAULT_COUNTRY)
             .iata(DEFAULT_IATA)
             .latitude(DEFAULT_LATITUDE)
-            .longitude(DEFAULT_LONGITUDE)
-            .altitude(DEFAULT_ALTITUDE);
+            .longitude(DEFAULT_LONGITUDE);
+            //.altitude(DEFAULT_ALTITUDE);
         return flightDetails;
     }
     /**
@@ -119,8 +119,8 @@ public class FlightDetailsResourceIT {
             .country(UPDATED_COUNTRY)
             .iata(UPDATED_IATA)
             .latitude(UPDATED_LATITUDE)
-            .longitude(UPDATED_LONGITUDE)
-            .altitude(UPDATED_ALTITUDE);
+            .longitude(UPDATED_LONGITUDE);
+            //.altitude(UPDATED_ALTITUDE);
         return flightDetails;
     }
 
@@ -150,7 +150,7 @@ public class FlightDetailsResourceIT {
         assertThat(testFlightDetails.getIata()).isEqualTo(DEFAULT_IATA);
         assertThat(testFlightDetails.getLatitude()).isEqualTo(DEFAULT_LATITUDE);
         assertThat(testFlightDetails.getLongitude()).isEqualTo(DEFAULT_LONGITUDE);
-        assertThat(testFlightDetails.getAltitude()).isEqualTo(DEFAULT_ALTITUDE);
+       // assertThat(testFlightDetails.getAltitude()).isEqualTo(DEFAULT_ALTITUDE);
     }
 
     @Test
@@ -300,7 +300,7 @@ public class FlightDetailsResourceIT {
             .andExpect(jsonPath("$.[*].longitude").value(hasItem(DEFAULT_LONGITUDE.intValue())))
             .andExpect(jsonPath("$.[*].altitude").value(hasItem(DEFAULT_ALTITUDE.intValue())));
     }
-    
+
     @Test
     @Transactional
     public void getFlightDetails() throws Exception {
@@ -347,8 +347,8 @@ public class FlightDetailsResourceIT {
             .country(UPDATED_COUNTRY)
             .iata(UPDATED_IATA)
             .latitude(UPDATED_LATITUDE)
-            .longitude(UPDATED_LONGITUDE)
-            .altitude(UPDATED_ALTITUDE);
+            .longitude(UPDATED_LONGITUDE);
+            //.altitude(UPDATED_ALTITUDE);
 
         restFlightDetailsMockMvc.perform(put("/api/flight-details")
             .contentType(TestUtil.APPLICATION_JSON_UTF8)
@@ -365,7 +365,7 @@ public class FlightDetailsResourceIT {
         assertThat(testFlightDetails.getIata()).isEqualTo(UPDATED_IATA);
         assertThat(testFlightDetails.getLatitude()).isEqualTo(UPDATED_LATITUDE);
         assertThat(testFlightDetails.getLongitude()).isEqualTo(UPDATED_LONGITUDE);
-        assertThat(testFlightDetails.getAltitude()).isEqualTo(UPDATED_ALTITUDE);
+       // assertThat(testFlightDetails.getAltitude()).isEqualTo(UPDATED_ALTITUDE);
     }
 
     @Test
