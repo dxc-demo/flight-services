@@ -1,5 +1,7 @@
 package com.dxc.application.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import javax.validation.constraints.*;
 
@@ -44,6 +46,7 @@ public class FlightDetails implements Serializable {
     private BigDecimal longitude;
 
     @Column(name = "altitude", precision = 21, scale = 2)
+    @JsonIgnore
     private BigDecimal altitude;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here, do not remove
