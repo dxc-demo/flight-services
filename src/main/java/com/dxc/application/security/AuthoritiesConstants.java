@@ -6,6 +6,8 @@ package com.dxc.application.security;
 public final class AuthoritiesConstants {
 
     public static final String ADMIN = "ROLE_ADMIN";
+    
+     public static final String ADMIN2 = "ROLE_ADMIN22";
 
     public static final String USER = "ROLE_USER";
 
