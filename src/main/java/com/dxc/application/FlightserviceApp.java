@@ -27,6 +27,8 @@ public class FlightserviceApp implements InitializingBean {
     private static final Logger log = LoggerFactory.getLogger(FlightserviceApp.class);
 
     private final Environment env;
+    
+    Environment env1;
 
     public FlightserviceApp(Environment env) {
         this.env = env;
