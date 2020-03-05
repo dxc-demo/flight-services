@@ -28,6 +28,9 @@ public class FlightserviceApp implements InitializingBean {
 
     private final Environment env;
     
+    String name = "abc";
+    
+    private static int number = 1;
 
     public FlightserviceApp(Environment env) {
         this.env = env;
