@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="FIUsbWebServiceImplService" targetNamespace="http://webservice.fiusb.ci.infosys.com/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://webservice.fiusb.ci.infosys.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <types>
+  </types>
+  <message name="FIUsbWebService_executeService">
+    <part name="arg0" type="xsd:string">
+    </part>
+  </message>
+  <message name="FIUsbWebService_executeServiceResponse">
+    <part name="return" type="xsd:string">
+    </part>
+  </message>
+  <portType name="FIUsbWebService">
+    <operation name="executeService" parameterOrder="arg0">
+      <input message="tns:FIUsbWebService_executeService">
+    </input>
+      <output message="tns:FIUsbWebService_executeServiceResponse">
+    </output>
+    </operation>
+  </portType>
+  <binding name="FIUsbWebServiceBinding" type="tns:FIUsbWebService">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="executeService">
+      <soap:operation soapAction=""/>
+      <input>
+        <soap:body use="literal" namespace="http://webservice.fiusb.ci.infosys.com/"/>
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://webservice.fiusb.ci.infosys.com/"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="FIUsbWebServiceImplService">
+    <port name="FIUsbWebService" binding="tns:FIUsbWebServiceBinding">
+      <soap:address location="http://BL4UL231:30100/fiwebservice/FIWebService"/>
+    </port>
+  </service>
+</definitions>
