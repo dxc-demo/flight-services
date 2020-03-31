@@ -19,6 +19,8 @@ import org.zalando.problem.spring.web.advice.security.SecurityProblemSupport;
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 @Import(SecurityProblemSupport.class)
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
+    
+    String myName ="";
 
     private final TokenProvider tokenProvider;
     private final SecurityProblemSupport problemSupport;
