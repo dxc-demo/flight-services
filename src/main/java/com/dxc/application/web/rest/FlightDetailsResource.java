@@ -29,6 +29,7 @@ import java.util.Optional;
 public class FlightDetailsResource {
 
     public String myName = null;
+     public String hello = null;
     
     private final Logger log = LoggerFactory.getLogger(FlightDetailsResource.class);
 
