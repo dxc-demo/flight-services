@@ -32,7 +32,7 @@ public class FlightDetailsResource {
 
     private static final String ENTITY_NAME = "flightserviceFlightDetails";
     
-    private static final String New_ENTITY_NAME = "flightserviceFlightDetails";
+    private static final String NEWENTITY_NAME = "flightserviceFlightDetails";
 
     @Value("${jhipster.clientApp.name}")
     private String applicationName;
