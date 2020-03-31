@@ -31,6 +31,8 @@ public class FlightDetailsResource {
     private final Logger log = LoggerFactory.getLogger(FlightDetailsResource.class);
 
     private static final String ENTITY_NAME = "flightserviceFlightDetails";
+    
+    private static final String New_ENTITY_NAME = "flightserviceFlightDetails";
 
     @Value("${jhipster.clientApp.name}")
     private String applicationName;
