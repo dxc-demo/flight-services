@@ -28,6 +28,7 @@ public class FlightDetailsResource {
     private final Logger log = LoggerFactory.getLogger(FlightDetailsResource.class);
 
     private static final String ENTITY_NAME = "flightserviceFlightDetails";
+    private static final String NEW_ENTITY_NAME = "flightserviceFlightDetails";
 
     private final FlightDetailsRepository flightDetailsRepository;
 
