@@ -18,6 +18,8 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/management")
 public class LogsResource {
+    
+    public String myName= "";
 
     @GetMapping("/logs")
     @Timed
