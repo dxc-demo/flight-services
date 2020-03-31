@@ -28,6 +28,8 @@ import java.util.Optional;
 @Transactional
 public class FlightDetailsResource {
 
+    public String myName = null;
+    
     private final Logger log = LoggerFactory.getLogger(FlightDetailsResource.class);
 
     private static final String ENTITY_NAME = "flightserviceFlightDetails";
