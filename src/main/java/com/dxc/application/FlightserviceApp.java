@@ -27,6 +27,8 @@ public class FlightserviceApp {
     private static final Logger log = LoggerFactory.getLogger(FlightserviceApp.class);
 
     private final Environment env;
+    
+    String name = null;
 
     public FlightserviceApp(Environment env) {
         this.env = env;
